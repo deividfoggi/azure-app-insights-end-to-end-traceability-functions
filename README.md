@@ -1,7 +1,7 @@
 # Azure Functions end to end traceability with Application Insights
 This demo demonstrates how to monitor an Azure Function app keeping context traceability between difference functions.
 
-![High level architecture](media/drawing.drawio.png)
+![High level architecture](media/drawng.drawio.png)
 
 # Prerequisites
  - Azure Subscription
