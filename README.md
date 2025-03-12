@@ -1,6 +1,8 @@
 # Azure Functions end to end traceability with Application Insights
 This demo demonstrates how to monitor an Azure Function app keeping context traceability between difference functions.
 
+![High level architecture](media/drawing.drawio.png)
+
 # Prerequisites
  - Azure Subscription
  - Visual Studio Code
@@ -32,11 +34,11 @@ This demo demonstrates how to monitor an Azure Function app keeping context trac
 11. Repeat step 6 using HttpTrigger function endpoint
 12. Go to Application Insights > Investigate > Transaction search and search for the id you have sent in the payload: 75107512 (consider it can take a feel seconds for the traces show up in the Appplication Insights)
 
-    ![alt text](media/transaction_seach.png)
+    ![Transaction search print screen](media/transaction_seach.png)
 
 13. Click in any of the traces to open the "End-to-end" transaction view and notice that, despite the fact it was processed by different functions, you can have an integrated view from the first trace to the last in the same view, and the reason is that the SDK used the same operation id for every event in this context, respecting all the settings in the host.json:
 
-    ![alt text](media/end-to-end-view.png)
+    ![End to end view print screen](media/end-to-end-view.png)
 
 # Troubleshooting
 
