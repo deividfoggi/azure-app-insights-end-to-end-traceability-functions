@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "demo_app_insights": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7162",
+      "launchBrowser": false
+    }
+  }
+}
